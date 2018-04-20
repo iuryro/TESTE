@@ -1,2 +1,15 @@
 <? echo "Hello World"; ?>
 <BR>Azure
+<BR>GitHub
+<br>
+  <b>#CREATE WebApp</b>
+ 
+ <br>az webapp deployment user set --user-name iury --password <b>***PWD***</b>
+ <br>az group create --name ResourceGroupBR --location "Brazil South"
+ <br>az appservice plan create --name AppServicePlanBR --resource-group ResourceGroupBR --sku S1 --is-linux
+ <br>az webapp create --resource-group ResourceGroupBR --plan AppServicePlanBR --name AppCaronas --runtime "PHP|7.0" --deployment-local-git
+ <br>Local git is configured with url of 'https://iury@appcaronas.scm.azurewebsites.net/AppCaronas.git'
+  
+  <BR>
+    <b>#CREATE A MySQL DATABASE</b>
+ <br>az mysql server create --name mysql-db-iury --resource-group ResourceGroupBR --location "Brazil South" --admin-user adminuser --admin-password <b>***PWD***</b> --sku-name GP_Gen4_2
