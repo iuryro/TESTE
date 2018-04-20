@@ -13,3 +13,14 @@
   <BR>
     <b>#CREATE A MySQL DATABASE</b>
  <br>az mysql server create --name mysql-db-iury --resource-group ResourceGroupBR --location "Brazil South" --admin-user adminuser --admin-password <b>***PWD***</b> --sku-name GP_Gen4_2
+
+    
+    
+    
+    <bR>
+      <b>#20/04</b>
+      <BR>
+#20/04/17
+        <BR><b>iury@Azure:~$ </b>az webapp create --name AppIury --resource-group ResourceGroupBR --plan AppServicePlanBR --runtime "PHP|7.0"
+<BR><b>iury@Azure:~$</b> az webapp deployment source config --name AppIury --resource-group ResourceGroupBR --repo-url 'https://github.com/iuryro/TESTE' --branch master --manual-integration
+
